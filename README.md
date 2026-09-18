@@ -25,7 +25,7 @@ HPA cell queries the API live. To use different fold changes, edit the `LOG2FC` 
 the first cell; nothing else changes.
 
 ## Finding
-![Expression comparison](chart.png)
+![Expression comparison](Chart.png)
 
 Measured in GSE60427 (16 Hp+ gastritis vs 8 Hp− normal biopsies), log2FC:
 
