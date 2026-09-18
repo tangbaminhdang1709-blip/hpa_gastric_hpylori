@@ -1,8 +1,9 @@
 # hpa_gastric_hpylori
 
-Gastric protein expression in healthy stomach tissue vs. *H. pylori* infection —
-8 genes, 2 conditions, built from Human Protein Atlas data. *H. pylori* is the most
-common cause of chronic gastritis and stomach ulcers.
+Gastric protein expression in healthy stomach tissue vs. *H. pylori* infection — 8 genes,
+2 conditions. Healthy baseline from the Human Protein Atlas; fold changes measured in
+GEO series GSE60427. *H. pylori* is the most common cause of chronic gastritis and
+stomach ulcers.
 
 > ⚠️ **The `nTPM` values in the H_pylori rows are constructed, not measured.**
 > They are HPA healthy-stomach nTPM scaled by fold changes measured separately in GSE60427.
@@ -18,15 +19,16 @@ CSV columns: `gene`, `ensembl`, `description`, `condition`, `nTPM`, `log2FC_vs_h
 
 ## Reproduce
 
-Open the notebook in Colab and Run all — it re-queries the HPA API, so it needs no local
-setup and no data files. To use your own differential expression results, edit the `LOG2FC`
-dict in the first cell; nothing else changes.
+Open the notebook in Colab and Run all — no local setup, no data files. The GEO cell
+downloads ~37 MB (series matrix + platform annotation) and takes about 30 seconds; the
+HPA cell queries the API live. To use different fold changes, edit the `LOG2FC` dict in
+the first cell; nothing else changes.
 
 ## Finding
 
 Measured in GSE60427 (16 Hp+ gastritis vs 8 Hp− normal biopsies), log2FC:
 
-| Gene | Gastritis | IM |
+| Gene | Gastritis | IM (intestinal metaplasia)|
 |---|---|---|
 | LCN2 | +4.22 | +3.29 |
 | CXCL8 | +2.66 | +2.40 |
