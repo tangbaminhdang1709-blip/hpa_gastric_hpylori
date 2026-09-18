@@ -4,12 +4,9 @@ Gastric protein expression in healthy stomach tissue vs. *H. pylori* infection �
 8 genes, 2 conditions, built from Human Protein Atlas data. *H. pylori* is the most
 common cause of chronic gastritis and stomach ulcers.
 
-> ⚠️ **Read this before using the numbers.**
-> Only the **Healthy** column is measured data (HPA consensus stomach nTPM, pulled live from
-> the HPA API). The **H_pylori** column is *derived*: it is the healthy baseline scaled by
-> literature-reported fold changes (`H_pylori = Healthy × 2^log2FC`). No infected-patient
-> samples were measured here. The `source` column in the CSV labels every row accordingly.
-> Treat the H. pylori values as a hypothesis to test against real data, not as results.
+> ⚠️ **The `nTPM` values in the H_pylori rows are constructed, not measured.**
+> They are HPA healthy-stomach nTPM scaled by fold changes measured separately in GSE60427.
+> Only `log2FC_vs_healthy` is an observed quantity. No study measured nTPM in infected tissue.
 
 ## Genes
 
@@ -33,11 +30,12 @@ dict in the first cell; nothing else changes.
 
 ## Finding
 
-The largest shifts are inflammatory induction (CXCL8 +700%, LCN2 +359%) against loss of the
-gastric protection program (GKN1 −82%, TFF1 −65%, ATP4B −57%, PGC −50%). The two arms matter
-differently for diagnosis: the inflammatory markers report active infection and resolve after
-eradication, while GKN1/TFF1/ATP4B/PGC loss tracks glandular atrophy, which carries the gastric
-cancer risk. Serum pepsinogen (PGC) is already a clinical atrophy screen.
+| Direction in infection | Genes |
+|---|---|
+| Up — inflammatory response | LCN2, CXCL8, ANGPTL4 |
+| Up in gastritis, down at metaplasia | ATP4B |
+| Down — mucosal / glandular | MUC5AC, PGC |
+| Unchanged | GKN1, TFF1 |
 
 ## Next step
 
