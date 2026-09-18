@@ -8,12 +8,6 @@ common cause of chronic gastritis and stomach ulcers.
 > They are HPA healthy-stomach nTPM scaled by fold changes measured separately in GSE60427.
 > Only `log2FC_vs_healthy` is an observed quantity. No study measured nTPM in infected tissue.
 
-## Genes
-
-| Direction in infection | Genes |
-|---|---|
-| Down — mucosal protection / glandular loss | GKN1, TFF1, PGC, ATP4B, MUC5AC |
-| Up — inflammatory response | ANGPTL4, CXCL8, LCN2 |
 
 ## Files
 
@@ -30,17 +24,34 @@ dict in the first cell; nothing else changes.
 
 ## Finding
 
-| Direction in infection | Genes |
-|---|---|
-| Up — inflammatory response | LCN2, CXCL8, ANGPTL4 |
-| Up in gastritis, down at metaplasia | ATP4B |
-| Down — mucosal / glandular | MUC5AC, PGC |
-| Unchanged | GKN1, TFF1 |
+Measured in GSE60427 (16 Hp+ gastritis vs 8 Hp− normal biopsies), log2FC:
+
+| Gene | Gastritis | IM |
+|---|---|---|
+| LCN2 | +4.22 | +3.29 |
+| CXCL8 | +2.66 | +2.40 |
+| ANGPTL4 | +1.36 | +2.54 |
+| ATP4B | +1.35 | −0.64 |
+| MUC5AC | −0.58 | −1.46 |
+| PGC | −0.32 | −0.96 |
+| GKN1 | −0.05 | −0.31 |
+| TFF1 | −0.02 | −0.12 |
+
+The signal is inflammatory: LCN2, CXCL8 and ANGPTL4 rise sharply and scale with severity.
+GKN1 and TFF1 don't move — the collapse reported in the literature is from gastric *cancer*
+tissue, not infected mucosa. Atrophy appears only at intestinal metaplasia, where PGC,
+MUC5AC and ATP4B drop.
+
+So the arms split by stage: LCN2/CXCL8 flag active infection, PGC/MUC5AC/ATP4B flag
+progression — the distinction that carries cancer risk.
+
+> **Limits:** one cohort, one array, 8 genes chosen in advance, no significance testing.
+> Small effects are unresolved, not null.
 
 ## Next step
 
-Replace the estimated fold changes with observed values from an H. pylori gastritis series
-(e.g. GEO **GSE60427**, **GSE27411**) and the analysis becomes a real comparison.
+Genome-wide differential expression across all ~50,000 probes with FDR correction,
+rather than 8 genes chosen in advance.
 
 ## Data source
 
