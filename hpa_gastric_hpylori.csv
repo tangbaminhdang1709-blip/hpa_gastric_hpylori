@@ -1,0 +1,17 @@
+gene,ensembl,description,condition,nTPM,log2FC_vs_healthy,source
+GKN1,ENSG00000169605,Gastrokine 1,Healthy,35310.8,0.0,HPA stomach nTPM
+GKN1,ENSG00000169605,Gastrokine 1,H_pylori,6242.1,-2.5,literature estimate
+TFF1,ENSG00000160182,Trefoil factor 1,Healthy,7508.8,0.0,HPA stomach nTPM
+TFF1,ENSG00000160182,Trefoil factor 1,H_pylori,2654.8,-1.5,literature estimate
+PGC,ENSG00000096088,Progastricsin,Healthy,57583.8,0.0,HPA stomach nTPM
+PGC,ENSG00000096088,Progastricsin,H_pylori,28791.9,-1.0,literature estimate
+ATP4B,ENSG00000186009,ATPase H+/K+ transporting subunit beta,Healthy,1001.8,0.0,HPA stomach nTPM
+ATP4B,ENSG00000186009,ATPase H+/K+ transporting subunit beta,H_pylori,436.1,-1.2,literature estimate
+MUC5AC,ENSG00000215182,"Mucin 5AC, oligomeric mucus/gel-forming",Healthy,174.8,0.0,HPA stomach nTPM
+MUC5AC,ENSG00000215182,"Mucin 5AC, oligomeric mucus/gel-forming",H_pylori,100.4,-0.8,literature estimate
+ANGPTL4,ENSG00000167772,Angiopoietin like 4,Healthy,21.0,0.0,HPA stomach nTPM
+ANGPTL4,ENSG00000167772,Angiopoietin like 4,H_pylori,73.1,1.8,literature estimate
+CXCL8,ENSG00000169429,C-X-C motif chemokine ligand 8,Healthy,10.8,0.0,HPA stomach nTPM
+CXCL8,ENSG00000169429,C-X-C motif chemokine ligand 8,H_pylori,86.4,3.0,literature estimate
+LCN2,ENSG00000148346,Lipocalin 2,Healthy,343.0,0.0,HPA stomach nTPM
+LCN2,ENSG00000148346,Lipocalin 2,H_pylori,1576.0,2.2,literature estimate
