@@ -54,5 +54,6 @@ Genome-wide differential expression across all ~50,000 probes with FDR correctio
 rather than 8 genes chosen in advance.
 
 ## Data source
+- [GSE60427](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE60427) — gastric biopsies, Bhutan and Dominican Republic cohorts (GEO)
+- [Human Protein Atlas](https://www.proteinatlas.org/) (proteinatlas.org), CC BY-SA 4.0
 
-[Human Protein Atlas](https://www.proteinatlas.org/) (proteinatlas.org), CC BY-SA 4.0.
