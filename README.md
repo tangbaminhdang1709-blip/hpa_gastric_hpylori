@@ -1,9 +1,8 @@
 # hpa_gastric_hpylori
-Analysis of protein expression differences in stomach tissue between healthy and H. pylori (which is the common cause of stomachache)conditions, using Human Protein Atlas data
-# hpa_gastric_hpylori
 
 Gastric protein expression in healthy stomach tissue vs. *H. pylori* infection —
-8 genes, 2 conditions, built from Human Protein Atlas data.
+8 genes, 2 conditions, built from Human Protein Atlas data. *H. pylori* is the most
+common cause of chronic gastritis and stomach ulcers.
 
 > ⚠️ **Read this before using the numbers.**
 > Only the **Healthy** column is measured data (HPA consensus stomach nTPM, pulled live from
